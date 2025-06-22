@@ -1,0 +1,60 @@
+{
+	"name": "CompanyData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls_raw_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "largest_companies.csv",
+				"fileSystem": "company-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Rank",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "Industry",
+				"type": "String"
+			},
+			{
+				"name": "Revenue",
+				"type": "String"
+			},
+			{
+				"name": "Profit",
+				"type": "String"
+			},
+			{
+				"name": "Employees",
+				"type": "String"
+			},
+			{
+				"name": "Headquarters[note 1]",
+				"type": "String"
+			},
+			{
+				"name": "State-owned",
+				"type": "String"
+			},
+			{
+				"name": "Ref.",
+				"type": "String"
+			}
+		]
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "companydatafactory",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6b8bf852-9977-489e-848e-7d512b6f2f14",
+		"tenantId": "44e3cf94-19c9-4e32-96c3-14f5bf01391a"
+	}
+}
